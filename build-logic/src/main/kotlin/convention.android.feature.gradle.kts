@@ -1,8 +1,8 @@
 import com.example.architecture_test.configureComposeAndroid
 
 plugins {
-    id("alio.android.library")
-    id("alio.android.hilt")
+    id("convention.android.library")
+    id("convention.android.hilt")
 }
 
 android {
