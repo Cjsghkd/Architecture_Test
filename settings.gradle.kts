@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
@@ -22,4 +23,5 @@ include(":core:designsystem")
 include(":core:network")
 include(":core:domain")
 include(":feature:main")
-include(":build-logic")
+
+gradle.startParameter.excludedTaskNames.addAll(listOf(":build-logic:testClasses"))
