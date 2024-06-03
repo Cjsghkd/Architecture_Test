@@ -7,8 +7,4 @@ plugins {
 
 android {
     configureComposeAndroid(this)
-
-    defaultConfig {
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-    }
 }
