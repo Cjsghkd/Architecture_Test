@@ -1,9 +1,11 @@
 import com.example.architecture_test.configureComposeAndroid
 import com.example.architecture_test.configureKotlinAndroid
+import gradle.kotlin.dsl.accessors._a31a802bb49e4298771372939c4853ad.android
 
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("plugin.compose")
 }
 
 android {
