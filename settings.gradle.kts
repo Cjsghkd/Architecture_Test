@@ -23,5 +23,6 @@ include(":core:designsystem")
 include(":core:network")
 include(":core:domain")
 include(":feature:main")
+include(":baselineprofile")
 
 gradle.startParameter.excludedTaskNames.addAll(listOf(":build-logic:testClasses"))
