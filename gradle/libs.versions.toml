@@ -10,6 +10,7 @@ kotlin = "2.0.0"
 ktlint = "12.1.1"
 hilt = "2.51.1"
 ksp = "2.0.0-1.0.21"
+detekt = "1.23.6"
 
 okhttp = "4.12.0"
 retrofit = "2.11.0"
@@ -68,3 +69,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-test = { id = "com.android.test", version.ref = "androidGradlePlugin" }
 baselineprofile = { id = "androidx.baselineprofile", version.ref = "baselineprofile" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
