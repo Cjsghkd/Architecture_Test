@@ -11,3 +11,9 @@ plugins {
     alias(libs.plugins.baselineprofile) apply false
     alias(libs.plugins.detekt)
 }
+
+detekt {
+    config.setFrom("${projectDir}/detekt.yml")
+    buildUponDefaultConfig = true
+    debug = true
+}
