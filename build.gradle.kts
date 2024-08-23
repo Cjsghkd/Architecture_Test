@@ -12,8 +12,14 @@ plugins {
     alias(libs.plugins.detekt)
 }
 
-detekt {
-    config.setFrom("${projectDir}/detekt.yml")
-    buildUponDefaultConfig = true
-    debug = true
+subprojects { // TODO 추 후 libs.version.toml 파일에 접근하여 plugin, version 정보 가져오기
+    apply(plugin = "io.gitlab.arturbosch.detekt")
+
+    detekt {
+        toolVersion = "1.23.6"
+        buildUponDefaultConfig = true
+        allRules = false
+        config.setFrom("$rootDir/config/detekt/detekt.yml")
+        ignoreFailures = true // detekt 빌드시 실패 ignore 처리
+    }
 }

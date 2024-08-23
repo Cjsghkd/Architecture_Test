@@ -15,7 +15,7 @@ complexity:
     threshold: 10
     includeStaticDeclarations: false
     includePrivateDeclarations: false
-  ComplexMethod:
+  CyclomaticComplexMethod:
     active: true
     threshold: 15
     ignoreSingleWhenExpression: false
@@ -72,12 +72,6 @@ naming:
   FunctionNaming:
     ignoreAnnotated:
       - 'Composable'
-    MatchingDeclarationName:
-      active: false
-    PackageNaming:
-      active: false
-    TopLevelPropertyNaming:
-      active: false
 
 performance:
   active: true
