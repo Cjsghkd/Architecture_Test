@@ -5,6 +5,9 @@ plugins {
 }
 
 dependencies {
+//    implementation(project(":feature:main"))
+    testImplementation(":feature:main")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
 
